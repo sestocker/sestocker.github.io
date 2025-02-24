@@ -5,8 +5,8 @@ into a static site whenever I push this repository to GitHub.
 
 ## Open Source Projects Used to Build This Blog
 
-[Jekyll](http://github.com/jekyll/jekyll/):</a> A simple, blog aware, static site generator (used for this site).
-[mojombo.github.io](https://github.com/mojombo/mojombo.github.io):</a> I used Tom's blog to fork.
+* [Jekyll](http://github.com/jekyll/jekyll/):</a> A simple, blog aware, static site generator (used for this site).
+* [mojombo.github.io](https://github.com/mojombo/mojombo.github.io):</a> I used Tom's blog to fork.
 
 ## License
 
