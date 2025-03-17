@@ -86,6 +86,13 @@ ul.posts {
   line-height: 1.5em;
 }
 
+@media only screen and (max-device-width: 480px) {
+	.site {
+		font-size: 125%;
+		width: 60em;
+	}
+}
+
 .title {
   color: #a00;
   font-weight: bold;
@@ -130,16 +137,6 @@ ul.posts {
 
       .site .footer .contact a {
         color: #8085C1;
-      }
-
-    .site .footer .rss {
-      margin-top: 1.1em;
-      margin-right: -.2em;
-      float: right;
-    }
-
-      .site .footer .rss img {
-        border: 0;
       }
 
 /*****************************************************************************/
