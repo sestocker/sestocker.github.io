@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+{{ page.title }}
+================
 
-### More Information
+<p class="meta">17 March  2025 - Toledo, OH</p>
 
-A place to include any other types of information that you'd like to include about yourself.
+<img src="/images/scott.jpg">
 
-### Contact me
-
-Reach out to me on LinkedIn.
+Connect with me on [LinkedIn](https://www.linkedin.com/in/scottstocker/)
