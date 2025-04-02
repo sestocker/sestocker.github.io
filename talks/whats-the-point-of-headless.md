@@ -9,8 +9,7 @@ permalink: /talks/whats-the-point-of-headless
 
 <p class="meta">20 March  2025 - Chicago, IL</p>
 
-<img src="/images/talks/whats-the-point-of-headless/Slide1.PNG" width="500" alt="whats the point of headless" />
-##What's the point of headless?
+![whats the point of headless](/images/talks/whats-the-point-of-headless/Slide1.PNG)
 I've given this talk in Chicago, Cleveland and LA Sitecore User Groups. I've had great conversations in all those settings. There is high interest for headless as an architecture as Sitecore development is moving in that direction.
 
 <img src="/images/talks/whats-the-point-of-headless/Slide2.PNG" width="500" alt="about me" />
