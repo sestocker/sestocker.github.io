@@ -14,7 +14,7 @@ Website performance is incredibly important for most companies. This is especial
 
 Perficient was recently brought on by a customer to help fix their Sitecore based website’s performance problems. Performance under normal use was good but the solution could not hold up under heavy load (with page load times taking up to 30 seconds). In this case, the requirement was to serve 1.3 million page views over the course of 2 hours – something that Sitecore is more than capable of doing given the correct infrastructure and proper performance minded setup, configuration and code.
 
-##Initial Steps
+## Initial Steps
 
 Sitecore has some really great built-in performance tools. Specifically, there are a few tools that come in quite handy when accessing performance of an installation:
 
@@ -22,7 +22,7 @@ Sitecore has some really great built-in performance tools. Specifically, there a
 2. Sitecore Debugger – The Sitecore Debugger provides a great deal of valuable data including trace information that details rendering execution timing. Under no load, the debugger provided no useful insights as to the problem. Under heavy load (which we simulated using Apache JMeter), no particular rendering stood out as the application had already crumbled under the simulated load.
 3. Sitecore Logs – Lastly, we closely examined the Sitecore logs for errors. In our particular case, we didn’t see anything of note in the logs but fixing errors that show up in your logs could be a good first step to improve performance.
 
-##Enter Dynatrace
+## Enter Dynatrace
 
 At this point, we started to think about diagnosing the problem from a .NET perspective. Remember that Sitecore is an ASP.NET application and can be profiled in the same way you might profile a custom application or service. There are number of popular profiling tools available but we decided to use Dynatrace.
 
@@ -49,7 +49,7 @@ While fixing the fast query problem solved most of the glaring performance probl
 
 Output caching increased throughput by 2.5 times and decreased SQL Server response time to 15ms. Output caching has a huge positive impact on performance so take a hard look at enabling caching everywhere you can in your Sitecore application.
 
-##Lessons Learned
+## Lessons Learned
 1. Fast Query isn’t fast Fast query is ok to use in isolated use cases or if the output (HTML) is cached. Otherwise, your SQL Server can quickly become a bottleneck under load. Remember that both Fast Query and Axes.GetDescendants() are not cached in the Sitecore data cache so using either of these methods always results in a query.
 2. Use Sitecore Datasource Don’t query for the item you need in your C# code. Instead, use datasource to point your rendering to the item it needs.
 3. Output caching makes everything really fast Using the output cache is highly recommended if performance is important (note: performance is always important). Any time you are writing code to look for a specific item in your tree, stop and think whether using datasource makes sense.
