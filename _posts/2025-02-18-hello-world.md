@@ -6,7 +6,7 @@ title: Hello, World! A New Beginning
 {{ page.title }}
 ================
 
-<p class="meta">18 Feb 2025 - Toledo, OH</p>
+<p class="meta">18 Feb 2025</p>
 
 If you’ve stumbled upon this post, it means you’re witnessing the very first step in my blogging journey. Starting a blog has been on my mind for a while. While I do blog for [Perficient](https://blogs.perficient.com/author/sstocker/), my topics there are somewhat limited to the niche of technology where I directly work. This personal blog will give me a place to write about a wider variety of topics - although I expect to mostly talk about software architecture, development and technology.
 
