@@ -1,32 +1,94 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="Scott Stocker" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <link href="https://www.stocker.foo/atom.xml" rel="alternate" title="Scott Stocker" type="application/atom+xml" />
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+  <title>{{ page.title }}</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Scott Stocker" />
+  <link href="https://www.stocker.foo/atom.xml" rel="alternate" title="Scott Stocker" type="application/atom+xml" />
+  <style>
+body {
+    display: block;
+    padding: 0px 20px;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    font: 13.34px helvetica, arial, clean, sans-serif;
+}
+
+.slug-line {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.story-title {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.topic-heading {
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.topic-container>ul {
+    padding: 0;
+    line-height: 1.4rem;
+}
+
+.topic-container li {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.topic-container {
+    margin-top: 20px;
+}
+
+.topic-date {
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.paragraphs-container {
+    line-height: 1.5rem;
+}
+
+
+.lower-nav-container {
+    margin-top: 40px;
+}
+
+.lower-nav-container li {
+    margin-left: 0;
+    display: inline;
+    padding-right: 20px;
+}
+
+    </style>
 </head>
 <body>
 
-<div class="site">
-  <div class="title">
-    <a href="/">Scott Stocker</a>
-    <a class="extra" href="/">home</a>
-	<a class="extra" href="/about">about</a>
-	<a class="extra" href="/talks">talks</a>
-  </div>
 
-  {{ content }}
 
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Scott Stocker, Senior Solutions Architect @ <a href="https://www.perficient.com/">Perficient</a>
-      </p>
-    </div>
+ 
+  <main>
+  <div class="topic-container">
+    <h1 class="topic-heading">Scott Stocker</h1>
+      {{ content }}
   </div>
-</div>
+</main>
+
+<footer>
+  <nav class="lower-nav-container">
+    <li><a href="/614470770">Contact Me</a></li>
+    <li><a href="/179876898">Terms of Use</a></li>
+    <li><a href="/179881519">Permissions</a></li>
+    <li><a href="/179878450">Privacy Policy</a></li>
+  </nav>
+
+  <p>&copy; Scott Stocker</p>
+</footer>
 </body>
 </html>
