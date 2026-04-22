@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sitecore Symposium 2019: Reinventing a Modern Intranet
+title: Reinventing a Modern Intranet
 ---
 
 {{ page.title }}
