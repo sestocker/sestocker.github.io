@@ -16,6 +16,24 @@ body {
     font: 13.34px helvetica, arial, clean, sans-serif;
 }
 
+#home ul {
+    padding: 0;
+    margin: 20px 0;
+    line-height: 1.4rem;
+}
+
+#post ul li {
+    display: block;
+    padding-bottom: 15px;
+    list-style: disc;
+}
+
+#post ol li {
+    display: block;
+    padding-bottom: 15px;
+    list-style: decimal;
+}
+
 .slug-line {
     font-size: 1.1rem;
     margin-bottom: 15px;
@@ -27,22 +45,24 @@ body {
     margin: 0;
 }
 
-.topic-heading {
-    line-height: 2rem;
-    font-size: 1.5rem;
+.blog-heading {
+    color: #a00;
+    font-weight: bold;
+    margin-bottom: 2em;
+    font-size: 2rem;
 }
 
-.topic-container>ul {
+.blog-container>ul {
     padding: 0;
     line-height: 1.4rem;
 }
 
-.topic-container li {
+.blog-container li {
     display: block;
     padding-bottom: 15px;
 }
 
-.topic-container {
+.blog-container {
     margin-top: 20px;
 }
 
@@ -74,15 +94,15 @@ body {
 
  
   <main>
-  <div class="topic-container">
-    <h1 class="topic-heading">Scott Stocker</h1>
+  <div class="blog-container">
+    <h1 class="blog-heading">Scott Stocker</h1>
       {{ content }}
   </div>
 </main>
 
 <footer>
   <nav class="lower-nav-container">
-    <li><a href="https://www.linkedin.com/in/scottstocker/">LinkedIn</a></li>
+    <li>Reach out to me on<a href="https://www.linkedin.com/in/scottstocker/">LinkedIn</a></li>
   </nav>
 
   <p>&copy; Scott Stocker</p>
