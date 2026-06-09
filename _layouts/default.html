@@ -12,8 +12,24 @@ body {
     padding: 0px 20px;
     max-width: 550px;
     margin: 0 auto;
-    background-color: #FAFAFA;
-    font: 13.34px helvetica, arial, clean, sans-serif;
+    background-color: rgba(0, 170, 194, 1);
+    font: 16px helvetica, arial, clean, sans-serif;
+	font-color: #FFF;
+}
+
+a {
+	font-color: #FFF;
+	text-decoration:none;
+}
+
+a:hover {
+	font-color: #FFF;
+	text-decoration:underline;
+}
+
+a:visited {
+	font-color: #FFF;
+	text-decoration:none;
 }
 
 #home ul {
@@ -46,9 +62,8 @@ body {
 }
 
 .blog-heading {
-    color: #a00;
     font-weight: bold;
-    margin-bottom: 2em;
+    margin: 2em 0 2em 0;
     font-size: 2rem;
 }
 
@@ -95,7 +110,7 @@ body {
  
   <main>
   <div class="blog-container">
-    <h1 class="blog-heading">Scott Stocker</h1>
+    <h1 class="blog-heading">Hi, I'm Scott</h1>
       {{ content }}
   </div>
 </main>
@@ -104,8 +119,6 @@ body {
   <nav class="lower-nav-container">
     <li>Connect with me on <a href="https://www.linkedin.com/in/scottstocker/">LinkedIn</a></li>
   </nav>
-
-  <p>&copy; Scott Stocker</p>
 </footer>
 </body>
 </html>
